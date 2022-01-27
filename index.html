@@ -9,38 +9,46 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-            Amount <input type="number" id="principal"> <br />
-            Interest Rate <input type="range" id="rate" min="minval" max="maxval" value="default_val">
-            <span id="rate_val" onchange="updateRate()">10.25%</span> <br />
-            No. of Years <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+            <div class="subdiv">
+                Amount &emsp; &emsp; &nbsp;&nbsp;&nbsp; <input type="number" id="principal"> <br />
+                Interest Rate &nbsp; &nbsp;&nbsp;&nbsp;<input type="range" id="rate" min="minval" max="maxval" step="0.25" value="10.25" onload="updateRate()" onchange="updateRate()">
+                <span id="rate_val">10.25%</span> <br />
+                No. of Years &emsp;&nbsp;&nbsp; <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
 
-            </select>
+                </select>
 
-            <br />
+                <br />
 
 
-            <button onclick="compute()">Compute Interest</button>
+                <button onclick="compute()">Compute Interest</button>
+                <br />
+                <br />
+
+
+                <span id="result">
+
+                </span><br>
+
+            </div>
+
             
-            <span id="result">
-
-            </span><br>
 
             <footer>
                 &#169; This Calculator belongs to Terje
             </footer>
 
         </div>
-        
+       
         
 
     </body>

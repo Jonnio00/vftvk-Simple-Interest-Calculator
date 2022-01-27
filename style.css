@@ -7,8 +7,21 @@ h1{color:grey; font-family: Verdana}
     padding: 20px;
     border-radius: 25px;
     margin: auto;
+    align-content:center;
     
 
 }
+.subdiv{
+    margin-left: 80px;
+    
+    
+    
 
+}
+.highlight{
+    background-color: yellow;
+}
 
+div > *{
+    margin-top:10px;
+}
